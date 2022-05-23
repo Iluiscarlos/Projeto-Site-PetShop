@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>pet&shop</title>
+  <script src="https://kit.fontawesome.com/2c48374459.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+<style>
+    
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: #ffffff;
+      height: 80px;
+    }
+
+    .font {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 100;
+      font-size: medium;
+    }
+    .font-description {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 100;
+      color: gray;
+      text-decoration: none;
+    }
+    .row {
+      margin: -20px;
+    }
+
+    .column {
+      width: 25%;
+      display: inline-block;
+      float: left;
+      
+      padding: 20px;
+      box-sizing: border-box;
+    } 
+    .container {
+      width: 1000px;
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;      
+    }
+    .logo{
+      width: 200px;
+      height: 150px;
+      padding-left: 150px;
+    }
+
+    .logo-about {
+      width: 200px;
+      height: 150px;
+    }
+
+    .navi {
+      color: black;
+      padding-right: 80px;
+      justify-content: space-between;
+      display: inline-block;
+    }
+    .navi a {
+      color: black;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+      padding-inline-start: 15px;
+      text-decoration: none;
+      height: 80px;
+    }
+
+    a:active {
+      background-color: #ff0077;
+      align-self: stretch;
+    }
+    
+    a:focus {
+      background-color: #ff0077;
+    }
+    a::selection{
+      background-color: #ff0077;
+      color: #ffffff;
+    }
+
+    a::before {
+      color: #ff0077;
+    }
+
+    .products {
+      text-align: center;
+
+    }
+
+    .container-products {
+      width: 1000px;
+      max-width: 100%;
+      display: flex;
+      box-sizing: border-box;
+      padding: 2px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .column-products {
+      width: 20%;
+      display: inline-block;
+      box-sizing: border-box;
+      padding-top: 20px;
+      
+    }
+    .product1:hover{
+
+      text-decoration: none;
+      font-family: 'Open Sans', sans-serif;
+      border-style:solid;
+      border-color: #858585;
+      border-radius:10px;
+      border-width: thin;
+      opacity: 0.5;
+    }
+    .product1{
+      text-decoration: none;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .products img {
+      width: 9rem;
+      padding-top: 15px;
+    }
+
+    .price {
+      color: #ff0077;
+      font-weight: bold;
+      font-size: large;
+      text-align:center;
+    }
+
+    #contacts{
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 100;
+      font-size: 16px;
+      color: #ffd8ea;
+      text-decoration: none;
+      margin-left: 5%;
+      padding-left: 80px;
+    }
+
+    .section-contacts{
+      background-color: #ff0077;
+      color:#ffd8ea;
+      padding-top: 20px;
+      padding-bottom: 40px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align:left;
+    }
+
+    .column-contacts{
+      width: 35%;
+      display: inline-block;
+      padding: 20px;
+      box-sizing: border-box;
+      text-decoration: none
+    }
+
+    .open-time{
+      font-family: 'Open Sans', sans-serif;
+      text-align: center;
+      display: inline-block;
+      font-weight: lighter;
+      font-size: 16px;
+      color:#ffd8ea;
+      float: left;
+      margin-left: 38%;
+      margin-top: -15%;
+    }
+
+    .redes{
+      font-family: 'Open Sans', sans-serif; 
+      font-size: 16px;
+      text-align: center;
+      display: inline-block;
+      color:#ffd8ea;
+      float: left;
+      margin-left: 80%;
+      margin-top: -15%;
+    }
+
+    .redes i {
+      color:#ffffff;
+      font-size: 1rem;
+      padding-bottom: 15px;
+    }
+
+    .row-rede {
+      margin: -10px;
+    }
+
+    .column-rede {
+      width: 15%;
+      display: inline-block;
+      
+      padding: 10px;
+      box-sizing: border-box;
+    } 
+
+    .footer{
+      text-align: center;
+      border-style: solid;
+      border-bottom: #ffffff;
+      border-color: #ffffff;
+    }
+
+</style>
+</head>
+<body>
+  <section class="font">
+    <header>
+        <img class="logo" id="home" src="logo-colored.svg"><a href="#banner"></a>
+    <nav class="navi">
+        <a href="#home">Home</a>
+        <a href="#about">Sobre</a>
+        <a href="#products">Produtos</a>
+        <a href="#service">Serviços</a>
+        <a href="#contact">Fale conosco</a>
+    </nav>
+    </header>
+    <br/>
+    <br/>
+    <br/>
+    <section class="products" id="products">
+      <h2 style="text-align: right;">Produtos</h2>      
+      <div class="container-products">
+        <br/>
+        <div class="column-products">
+          <div class="product1">
+        <a href="#product1"><img src="product-1.webp"/></a>
+        <p>Royal Canin Maxi Adult 15kg</p>  
+        <br/>
+        <p class="price">R$ 109,90</p>
+      </div>
+      </div>
+    <div class="column-products">
+      <div class="product1">
+      <a href="#product1"><img src="product-2.webp"/></a>
+      <p>Premier Fórmula Raças Medias Adulto</p> 
+      <br/>
+      <p class="price">R$ 79,90</p>
+    </div>
+    </div>
+    <div class="column-products">
+      <div class="product1">
+      <a href="#product1"><img src="product-3.webp"/></a>
+      <p>Pro Plan Raças Pequenas Reduced Calorie</p>
+      <br/>
+      <p class="price">R$ 79,90</p>
+    </div>
+    </div>
+    <div class="column-products">
+      <div class="product1">
+      <a href="#product1"><img src="product-4.webp"/></a>
+      <p>EasOtic 10ml - Virbac</p> 
+      <br/>
+      <p class="price">R$ 169,90</p>
+    </div>
+    </div>
+    <div class="column-products">
+      <div class="product1">
+      <a href="#product1"><img src="product-5.webp"/></a>
+      <p>Moletom Snoopy Sleeping Azul- Zooz</p> 
+      <br/>
+      <p class="price">R$ 39,90</p>
+    </div>
+    </div>
+    <div class="column-products">
+      <div class="product1">
+      <a href="#product1"><img src="product-6.webp"/></a>
+      <p>N&D Ancestral Selection Cães Adultos Raças Grandes</p> 
+      <br/>
+      <p class="price">R$ 89,90</p>
+      </div>
+    </div>
+    </div>
+    <div class="container-products">
+      <br/>
+      <div class="column-products">
+        <div class="product1">
+      <a href="#product1"><img src="product-7.webp"/></a>
+      <p>Kit Hills Prescription Diet Lata A/D Urgent Care 156g</p>  
+      <br/>
+      <p class="price">R$ 44,90</p>
+    </div>
+    </div>
+  <div class="column-products">
+    <div class="product1">
+      <a href="#product1"><img src="product-8.webp"/></a>
+    <p>Three Cats Original Sênior 10,1kg</p> 
+    <br/>
+    <p class="price">R$ 69,90</p>
+  </div>
+  </div>
+  <div class="column-products">
+    <div class="product1">
+      <a href="#product1"><img src="product-9.webp"/></a>
+    <p>Peitoral Ergocomfort Rosa Ferplast</p>
+    <br/>
+    <p class="price">R$ 134,90</p>
+  </div>
+  </div>
+  <div class="column-products">
+    <div class="product1">
+      <a href="#product1"><img src="product-10.webp"/></a>
+    <p>Peitoral Para Cachorros Sail Dog 27</p> 
+    <br/>
+    <p class="price">R$ 129,90</p>
+  </div>
+  </div>
+  <div class="column-products">
+    <div class="product1">
+      <a href="#product1"><img src="product-11.webp"/></a>
+    <p>Guia Para Cachorros Tropical Dog 27</p> 
+    <br/>
+    <p class="price">R$ 114,90</p>
+  </div>
+  </div>
+  <div class="column-products">
+    <div class="product1">
+      <a href="#product1"><img src="product-12.webp"/></a>
+    <p>Guia Para Cachorros One Dog 27</p> 
+    <br/>
+    <p class="price">R$ 114,90</p>
+  </div>
+  </div>
+  </div>
+    
+</section>
+<br/>
+  <br/>
+    <section class="section-contacts">
+      <img src="logo-white.svg" class="logo-about" style="padding-left: 150px;">
+    <section id="contacts" class="container">
+      <address>
+        <h4 style="font-style:normal;"><b>Contato</b></h4>
+        <p style="font-style: normal;";>Estrada sem nome,1234, Sala 0 <br/>
+          Bairro - Cidade / UF <br/>
+          12345-678</p>
+      </address>
+      <a href="tel:+550099999999" style="color:#ffffff; text-decoration: none;">(00) 9999-9999</a></br>
+      <a href="mailto:contato@petshop.com.br" style="color:#ffffff; text-decoration: none;">contato@petshop.com.br</a>,
+    </section>
+      <div class="open-time">
+        
+        <h4 style="text-align: var(contato);">Horário de Funcionamento</h4>
+        <p>De Segunda a Sexta-feira das 9 às 18hs.</br>
+        Aos Sábados das 9 às 19hs.</p>
+      </div>
+      <section class="redes">
+        <h4 style="text-align: end;">Siga-nos</h4>
+        <div class="row-rede">
+          <div class="column-rede">
+          <i class="fa-brands fa-facebook-f"></i>
+        </div>
+        <div class="column-rede">
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div class="column-rede">
+          <i class="fa-brands fa-tiktok"></i>
+        </div>
+        <div class="column-rede">
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+        <div class="column-rede">
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+        </div>
+      </section>
+      <br/>
+      <footer class="footer">
+        <span>© 2022 pet&shop | Todos os direitos reservados. Desenvolvido por <b>Crie_TI</b></span>
+      </footer>
+    </section>
+</body>
+</html>
+

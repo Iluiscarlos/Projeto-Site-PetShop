@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>pet&shop</title>
+  <script src="https://kit.fontawesome.com/2c48374459.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+<style>
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: #ffffff;
+      height: 80px;
+      box-shadow: 0 5px 1em #cecece;
+    }
+
+    .brand-name {
+      color: #ff0077;
+      margin-right: 20px;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .brand-name a {
+      color: inherit;
+      text-decoration: none;
+      width: 16px;
+    }
+
+    .font {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 100;
+      font-size: medium;
+    }
+
+    .logo{
+      width: 200px;
+      height: 150px;
+      padding-left: 150px;
+    }
+
+    .logo-about {
+      width: 200px;
+      height: 150px;
+    }
+
+    .navi {
+      color: black;
+      padding-right: 80px;
+      justify-content: space-between;
+      display: inline-block;
+    }
+    .navi a {
+      color: black;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+      padding-inline-start: 15px;
+      text-decoration: none;
+      height: 80px;
+    }
+    .navi a :visited{
+      display: block;
+      background-color: #ff0077;
+    }
+
+    .navi ::after{
+      background-color: #ff0077;
+    }
+
+    .image-right{
+        width: 500px;
+        display: inline-block;
+        margin-right: 0px;
+        margin-bottom: 5%;
+        padding-top: 70px;
+        float: left;
+        background-color:#ffffff;
+    }
+
+    .discription-left{
+      width: 40%;
+      height: 100%;
+      display: inline-block;
+      margin-top: 3%;
+      padding-top: 50px;
+      padding-right: 255px;
+      padding-left: 40px;
+      text-align: left;
+      background-color:#ffffff;
+    }
+
+    .titulo-services {
+        font-size: 18px;
+        color: #ff0077;
+    }
+
+    .image-left {
+        width: 500px;
+        display: inline-block;
+        margin-top: -40px;
+        margin-right: 0px;
+        margin-bottom: 5%;
+        padding-top: 40px;
+        float: right;
+    }
+
+    .discription-right {
+      width: 40%;
+      height: 100%;
+      display: inline-block;
+      margin-top: -3%;
+      padding-top: 50px;
+      padding-right: 40px;
+      padding-left: 255px;
+      text-align: right;
+      background-color:#ff0077;
+    }
+
+    .text-bath{
+      font-size: 16px; 
+    }
+
+    .container {
+      width: 1000px;
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;      
+    }
+</style>
+</head>
+
+<section class="font">
+    <header>
+        <img class="logo" id="home" src="logo-colored.svg"><a href="#banner"></a>
+    <nav class="navi">
+        <a href="Index.html">Home</a>
+        <a href="#about">Sobre</a>
+        <a href="products.html">Produtos</a>
+        <a href="#service">Serviços</a>
+        <a href="About.html">Fale conosco</a>
+    </nav>
+    </header>
+<section id="service">
+    <div>
+        <img class="image-right" src="bath-and-groom.jpg">
+    <div class="discription-left">
+        <h3 class="titulo-services">Banho e tosa</h3>
+        <p class="text-bath"><b>Dispomos de uma equipe especializada e treinada para realizar o banho e tosa do seu pet, com todo o cuidado necessário e com os melhores produtos do mercado!</b></p>
+            <p class="text-bath">Na pet&shop, você tem a garantia de que seu pet será atendido com o mesmo carinho e atenção que você dá à ele. Todos nossos profissionais são muito bem qualificados e passam por constantes treinamentos, visando sempre entregar a melhor experiência para você e seu melhor amigo. Nossa infraestrutura é altamente profissional, contando com secadores, estações de trabalho individuais e produtos de alta qualidade.</p>
+    </div>
+    </div>
+    <div>
+        <img class="image-left" src="medical-center.jpg">
+    <div class="discription-right">
+        <h3 style="font-size: 18px; color: #ffffff;">Centro Médico</h3>
+        <p style="font-size: 1px; color: #ffffff;"><b>Aqui você encontrará uma clínica veterinária completa, com médicos veterinários formados e instalações especializadas!</b></p>
+        <p style="font-size: 16px; color: #ffffff;">Nós nos preocupamos em oferecer sempre o melhor atendimento. Nossos veterinários são experientes, possuem treinamento, capacitação e certificados, tendo à disposição todos os equipamentos necessários para tratar o seu pet, bem como os melhores medicamentos do mercado. Nossos profissionais estão sempre disponíveis para sanar suas dúvidas e fornecer informações sobre a saúde do seu pet.</p>
+    </div>
+    </div>
+</section>
+</html>

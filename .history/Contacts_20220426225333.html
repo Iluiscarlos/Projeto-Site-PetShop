@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>pet&shop</title>
+  <script src="https://kit.fontawesome.com/2c48374459.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+<style>
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: #ffffff;
+      height: 80px;
+      box-shadow: 0 5px 1em #cecece;
+    }
+
+    .brand-name {
+      color: #ff0077;
+      margin-right: 20px;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .brand-name a {
+      color: inherit;
+      text-decoration: none;
+      width: 16px;
+    }
+
+    .font {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 100;
+      font-size: medium;
+    }
+
+    .logo{
+      width: 200px;
+      height: 150px;
+      padding-left: 150px;
+    }
+
+    .logo-about {
+      width: 200px;
+      height: 150px;
+    }
+
+    .navi {
+      color: black;
+      padding-right: 80px;
+      justify-content: space-between;
+      display: inline-block;
+    }
+    .navi a {
+      color: black;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+      padding-inline-start: 15px;
+      text-decoration: none;
+      height: 80px;
+    }
+    .navi a :visited{
+      display: block;
+      background-color: #ff0077;
+    }
+
+    .navi ::after{
+      background-color: #ff0077;
+    }
+
+    .container {
+      width: 500px;
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+
+    }
+
+    .form-item {
+      width: 100%;
+      min-height: 30px;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+    }
+
+    #form {
+      background-color:#ffffff;
+      color:black;
+      padding-top: 100px;
+      padding-bottom: 20px;
+    }
+
+</style>
+</head>
+<body>
+    <section class="font">
+        <header>
+            <img class="logo" id="home" src="logo-colored.svg"><a href="#banner"></a>
+        <nav class="navi">
+            <a href="Index.html">Home</a>
+            <a href="About.html">Sobre</a>
+            <a href="products.html">Produtos</a>
+            <a href="Services.html">Serviços</a>
+            <a href="">Fale conosco</a>
+        </nav>
+        </header>
+    <section id="form" class="container">
+        <div class="form-titulo">
+            <h2 style="text-align: start;">Fale conosco</h2>
+        </div>
+        <div class="form">
+            <form>
+                <label for="name">Nome</label> <br/>
+                <input class="form-item" type="text" id="name" name="name" >
+                <br/>
+                <label for="email">Endereço de e-mail</label> <br/>
+                <input class="form-item" type="email" id="email" name="email" placeholder="E-mail">
+                <br/>
+                <label for="phone">Número de telefone</label><br/>
+                <input class="form-item" type="tel" id="phone" name="telefone">
+                <br/>
+                <label for="estado">Estado</label><br/>
+                <select class="form-item" id="estado" name="Selecione"placeholder="Selecione">
+                    <option value="0" selected disabled></option>
+                    <option value="1">Rio Grande do Sul</option>
+                </select>
+
+                <br/>
+                <label for="cidade">Cidade</label><br/>
+                <select class="form-item" id="cidade" name="Selecione">
+                    <option value="0" selected disabled></option>
+                    <option value="1">Arroio do Meio</option>
+                    <option value="2">Bom Retiro</option>
+                    <option value="3">Estrela</option>
+                    <option value="4">Lajeado</option>
+                    <option value="5">Teutônia</option>
+                </select>
+                <br/>
+                <label for="textarea">Mensagem</label><br/>
+                <textarea class="form-item" id="textarea" name="Mensagem"rows="5" cols="30"></textarea>
+                <br/>
+                <input class="form-item" type="button" value="Enviar">
+            </form>
+        </div>
+    </section>
+</body>
+</html>
